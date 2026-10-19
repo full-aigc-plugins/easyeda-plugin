@@ -1,6 +1,6 @@
 # EasyEDA
 
-面向 Agent 宿主的 **EasyEDA** 插件，版本 `0.1.0-dev.20261019.4`。使用嘉立创 EDA / EasyEDA 专业版客户端的**内置 MCP**，携带独立 `easyeda-skills` 源包的 33 个自包含技能快照。`displayName` 为 `EasyEDA`。
+面向 Agent 宿主的 **EasyEDA** 插件，版本 `0.1.0-dev.20261019.6`。使用嘉立创 EDA / EasyEDA 专业版客户端的**内置 MCP**，携带独立 `easyeda-skills` 源包的 33 个自包含技能快照。`displayName` 为 `EasyEDA`。
 
 当前为开发候选，源码托管在 [full-aigc-plugins/easyeda-plugin](https://github.com/full-aigc-plugins/easyeda-plugin)，已在本机 Codex 安装验证；尚未创建正式 Release。本包不是 EDA 内部的 `.eext`；官方 Run API Gateway 不是默认依赖。
 
@@ -18,7 +18,7 @@ flowchart LR
 
 ## 本地使用
 
-在宿主的本地插件导入入口选择本目录；Codex marketplace 文件位于 `.agents/plugins/marketplace.json`，source 使用插件根目录相对路径 `./`。本插件已通过官方 `codex plugin add` 安装到本机 Codex，当前版本 0.1.0-dev.20261019.4，读回 installed=true、enabled=true；含 33 个技能和 1 个内置 MCP。Claude/ZCode 实际加载未验证。
+在宿主的本地插件导入入口选择本目录；Codex marketplace 文件位于 `.agents/plugins/marketplace.json`，source 使用插件根目录相对路径 `./`。本插件已通过官方 `codex plugin add` 安装到本机 Codex，当前版本 0.1.0-dev.20261019.6，读回 installed=true、enabled=true；含 33 个技能和 1 个内置 MCP。Claude/ZCode 实际加载未验证。
 
 不同宿主的入口分别是 `.codex-plugin/plugin.json`、`.claude-plugin/plugin.json` 与 `.zcode-plugin/plugin.json`。根 `plugin.json` 和 `mcp.json` 使用 Agent Plugins 1.0.0 portable 结构。原生宿主配置保留各自的 MCP transport 写法，不把 portable type 直接复制到所有宿主。
 
@@ -77,7 +77,7 @@ python3 -B scripts/sync_skills.py --source /绝对路径/easyeda-skills --check
 
 ## 可选高级 MCP
 
-配套 EDA 内部扩展 EasyEDA MCP 提供 14 个领域接口，默认只读；安装包位于 extensions/，来源与摘要见 docs/eda-extension.json。它通过同一个客户端内置 MCP 暴露 external.easyedaMcp，不额外启动服务。安装仍由用户明确授权后导入 EDA 扩展管理器。先用 easyeda-extension-use 技能发现和读取，写入与真实制造导出尚未做板卡验收。
+配套 EDA 内部扩展 EasyEDA MCP 提供 14 个领域接口，默认只读；安装包位于 extensions/，来源与摘要见 docs/eda-extension.json。它通过同一个客户端内置 MCP 暴露 external.easyedaMcp，不额外启动服务。安装仍由用户明确授权后导入 EDA 扩展管理器。先用 easyeda-extension-use 技能发现和读取，写入和导出已在独立 LED 及快速入门 Demo 验证；其他板型仍需单独验收。
 
 ## 从 GitHub 安装到 Codex
 
@@ -87,3 +87,13 @@ codex plugin add easyeda@full-aigc-plugins-easyeda
 ```
 
 随包保留 extensions/ 中配套 .eext 安装包；开发依赖、缓存、构建 dist 和本机检查回执不提交。独立测试工程及制造输出保留在本地 easyeda-mcp/artifacts/，不随源码仓库提交。
+
+## 完整官方技能资源
+
+版本 0.1.0-dev.20261019.6 已实际携带 5 个官方技能的完整原文、原版脚本、297 个独立 Schema、291 份图元说明、302 份格式样例及 API/扩展开发参考；eprj3 技能还包含自己的完整格式依赖。总计 9 份固定来源快照、2,769 个文件（格式依赖独立携带，所以物理 Schema 副本共 594 个）。
+
+资源位于各对应技能的 upstream/；中文入口通过 references/bundled-official.md 定位。逐文件修订与摘要见 [official-assets.json](official-assets.json)。快照由 easyeda-skills 同步，不能在本仓库单独改写上游文件。
+
+内置 MCP 配置保持原样。原版 Bridge 源码仅为来源参考，不启动、不配置第二个服务。格式依赖通过技能内 scripts/validate_format.py 的显式 --install-deps 安装到可写缓存，不写入插件资源目录。
+
+新版离线工具、Schema、安装与原生 MCP 验收见 [官方资源验收](docs/official-assets-validation.md)。本次资源补齐不代表 97 个官方插件全部安装或实测。

@@ -15,7 +15,7 @@
         "authentication": "ON_USE"
       },
       "category": "Productivity",
-      "version": "0.1.0-dev.20261019.4",
+      "version": "0.1.0-dev.20261019.6",
       "description": "嘉立创 EDA / EasyEDA 专业版技能与原生 MCP 接入；本地开发候选。",
       "interface": {
         "displayName": "EasyEDA",

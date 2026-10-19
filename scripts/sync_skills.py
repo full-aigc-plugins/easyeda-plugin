@@ -19,7 +19,8 @@ def sync(source, check=False, root=ROOT):
             raise ValueError('来源技能含符号链接：' + str(path))
         if path.is_file() and '__pycache__' not in path.parts and path.suffix != '.pyc':
             files[path.relative_to(source).as_posix()] = path.read_bytes()
-    for name in ['catalog.json', 'source-lock.json', 'docs/upstream-repositories.json', 'NOTICE', 'LICENSE']:
+    for name in ['catalog.json', 'source-lock.json', 'official-assets.json', 'scripts/validate_official.py',
+                 'docs/upstream-repositories.json', 'NOTICE', 'LICENSE']:
         files[name] = (source / name).read_bytes()
     files['scripts/validate_skills.py'] = (source / 'scripts/validate_package.py').read_bytes()
     if not files:

@@ -17,6 +17,8 @@ class SnapshotTest(unittest.TestCase):
         for name, text in {'catalog.json': '{"version":"0.1.0"}', 'source-lock.json': '{}',
                            'docs/upstream-repositories.json': '[]', 'NOTICE': 'notice', 'LICENSE': 'license',
                            'scripts/validate_package.py': 'pass',
+                           'scripts/validate_official.py': 'pass',
+                           'official-assets.json': '{"schemaVersion":1,"bundles":[]}',
                            'skills/easyeda-api/SKILL.md': 'first version'}.items():
             path = source / name
             path.parent.mkdir(parents=True, exist_ok=True)
@@ -30,6 +32,8 @@ class SnapshotTest(unittest.TestCase):
             plugin = root / 'plugin'
             plugin.mkdir()
             module.sync(source, root=plugin)
+            self.assertTrue((plugin / 'official-assets.json').is_file())
+            self.assertTrue((plugin / 'scripts/validate_official.py').is_file())
             self.assertEqual((plugin / 'skills/easyeda-api/SKILL.md').read_text(), 'first version')
             self.assertFalse(any(p.is_symlink() for p in plugin.rglob('*')))
             module.sync(source, check=True, root=plugin)
