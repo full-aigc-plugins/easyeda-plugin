@@ -1,0 +1,588 @@
+{
+  "schemaVersion": 1,
+  "source": "full-aigc-skills/easyeda-skills",
+  "sourceVersion": "0.1.0-dev.20261019.4",
+  "published": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "5a9de648034eb5bf334fd00af5943a85138e247a8c3af553ef76196c48cc43b8"
+    },
+    {
+      "path": "catalog.json",
+      "sha256": "f3137bac735ca500da009ef9b8a1985770a08b2a42ce09e8e1104b365699a380"
+    },
+    {
+      "path": "docs/upstream-repositories.json",
+      "sha256": "3ab7784aa920689210bc17f893f36863485023f9fa57ee531e37cd29dc35a535"
+    },
+    {
+      "path": "scripts/validate_skills.py",
+      "sha256": "9cc6c6b3e9c6cc5a5c33921981a7be524b80bea554118a21d12f1b838396e785"
+    },
+    {
+      "path": "skills/easyeda-api/SKILL.md",
+      "sha256": "f2f05969e8c4d50599960a04d0d41239b3e3ccf7d9ac505ab91eea9a468da526"
+    },
+    {
+      "path": "skills/easyeda-api/agents/openai.yaml",
+      "sha256": "bc31b655951981722db852f493cc04a7414ded2a2b975f2086ab3eb71265102a"
+    },
+    {
+      "path": "skills/easyeda-api/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-api/references/official-adaptation.md",
+      "sha256": "f4eea7686b360c537e17515398beea114b268596d59d59eb95ed5656006b35f8"
+    },
+    {
+      "path": "skills/easyeda-api/references/operations.md",
+      "sha256": "904cb2d144e16bd93439418c06535af7c8fca70debaf86bc32b58879511a3dda"
+    },
+    {
+      "path": "skills/easyeda-bom-assembly/SKILL.md",
+      "sha256": "0f366f765de9266f718f2e9af1c8047a10f2deb7c1f9a5704dc1c3b38af08479"
+    },
+    {
+      "path": "skills/easyeda-bom-assembly/agents/openai.yaml",
+      "sha256": "df0a823af8f59c432ce6d3aa642914c2973a3d98174d46f75059e4026fb93a0a"
+    },
+    {
+      "path": "skills/easyeda-bom-assembly/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-bom-assembly/references/operations.md",
+      "sha256": "80dd00c9ef2a1ec9b99676f27c4ff6621f74932166cd96e62877a4125e476d42"
+    },
+    {
+      "path": "skills/easyeda-cad-integration/SKILL.md",
+      "sha256": "eb170d0c23c6f201d0e2d48934dccaacf80a78e84a9cd5b2053265ef2b61160e"
+    },
+    {
+      "path": "skills/easyeda-cad-integration/agents/openai.yaml",
+      "sha256": "8806c9b04377ac49213799b23dac6b0470fbf8004bbd9f8c1838a01f12ce4e6f"
+    },
+    {
+      "path": "skills/easyeda-cad-integration/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-cad-integration/references/operations.md",
+      "sha256": "3dea1680a57e33559b3ed9f3079f80ee1849ef6c69934911dd23001757e89dfb"
+    },
+    {
+      "path": "skills/easyeda-component-library/SKILL.md",
+      "sha256": "e5a6d47b5c175ce599dc0f7fab7913adc34f9331378fefab0932d0f8709b5cb1"
+    },
+    {
+      "path": "skills/easyeda-component-library/agents/openai.yaml",
+      "sha256": "6be5d7c5a0212db7f3272bb1abca74430a11dda8b5ab60774bf2831867c339c2"
+    },
+    {
+      "path": "skills/easyeda-component-library/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-component-library/references/operations.md",
+      "sha256": "53dd7dbe9623f0b36708588536929f2487645d406d3298d85339f785b73fdd27"
+    },
+    {
+      "path": "skills/easyeda-datasheet-analysis/SKILL.md",
+      "sha256": "be7ee0efa5906e375b4757a89f6c739c169cd44617822dd0d8fd348e30398552"
+    },
+    {
+      "path": "skills/easyeda-datasheet-analysis/agents/openai.yaml",
+      "sha256": "f8277f5d5f32f894c73f50235195eae31fd5289ce6926fc6bd1343c4fa1f346b"
+    },
+    {
+      "path": "skills/easyeda-datasheet-analysis/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-datasheet-analysis/references/operations.md",
+      "sha256": "3dbadd19d2d8eab92311c327d2304a3fa7423f54759ea3abb810833523f040a0"
+    },
+    {
+      "path": "skills/easyeda-design-rules/SKILL.md",
+      "sha256": "184036f451509b823b9ef06f7b1baabbd70b5b28bf196654bd076f99bcc03d03"
+    },
+    {
+      "path": "skills/easyeda-design-rules/agents/openai.yaml",
+      "sha256": "772e9ba510dce06cfe232867b7c76bcacdf56d2043236a9d846f56f0a36dba53"
+    },
+    {
+      "path": "skills/easyeda-design-rules/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-design-rules/references/operations.md",
+      "sha256": "986a82c07ce6aa93873f109ed4c4089535aec9d511c7f3f8d8f22aa007c7d9a8"
+    },
+    {
+      "path": "skills/easyeda-documentation/SKILL.md",
+      "sha256": "f6fbb00cb4ef68236efbe444f1ada12f8374c5c35376b3c13582490ac0a03c49"
+    },
+    {
+      "path": "skills/easyeda-documentation/agents/openai.yaml",
+      "sha256": "8d5179dcbe7431b3c7686d7a70dccff62b1427fc077d967350324b5c69d0dd2f"
+    },
+    {
+      "path": "skills/easyeda-documentation/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-documentation/references/operations.md",
+      "sha256": "8c2cc1e62e674b02da1a2c4d31d88ccd1ec365c9fcf505cb37015947ef7b04a4"
+    },
+    {
+      "path": "skills/easyeda-drc-dfm/SKILL.md",
+      "sha256": "413fb71e97a0e0e392c7657810ad9e37ed59dad3cdcee3a106f0b4f13ed4735f"
+    },
+    {
+      "path": "skills/easyeda-drc-dfm/agents/openai.yaml",
+      "sha256": "e214608704b7f86000ef467587cb4a628ec5eb0afa66592c20b07606620336ff"
+    },
+    {
+      "path": "skills/easyeda-drc-dfm/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-drc-dfm/references/operations.md",
+      "sha256": "5e7d1a2352978622b25169a705fee99da6cb903e2d39aaaaf72763441aa6e04f"
+    },
+    {
+      "path": "skills/easyeda-end-to-end/SKILL.md",
+      "sha256": "3ec8638017707d6fcad887466adc9ce70be478cbead8b13ee4a354a0c9a9b9e7"
+    },
+    {
+      "path": "skills/easyeda-end-to-end/agents/openai.yaml",
+      "sha256": "1c76164652af20c0883d466ffeb3e360cc160a257b8e6208f51cc98758ad8c51"
+    },
+    {
+      "path": "skills/easyeda-end-to-end/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-end-to-end/references/operations.md",
+      "sha256": "3bacfe436e4216cb2804583b04132e043675e4308dd9e4e828d6d6018b3d3442"
+    },
+    {
+      "path": "skills/easyeda-eprj3/SKILL.md",
+      "sha256": "04814e764b566084226938b3953f8260374f6f662a087fbcd10be5b1748270e1"
+    },
+    {
+      "path": "skills/easyeda-eprj3/agents/openai.yaml",
+      "sha256": "84e5f0ff636aca3656d7f0b31771d87066473aa513c9f8abbd39a04665d90d75"
+    },
+    {
+      "path": "skills/easyeda-eprj3/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-eprj3/references/official-adaptation.md",
+      "sha256": "a36b9bd25e06f639e6abb1d1db68c5a13f1227a23a19dc52b9a1c0e74dccbedf"
+    },
+    {
+      "path": "skills/easyeda-eprj3/references/operations.md",
+      "sha256": "5a5e30a917e728cd8e775183dcdf4d2b5d8f2bf9aead72d37c6acf2c462dac02"
+    },
+    {
+      "path": "skills/easyeda-extension-development/SKILL.md",
+      "sha256": "cd567c3de27a90cf225b19394831f99893f7e16018f2683758889bbe32b19dad"
+    },
+    {
+      "path": "skills/easyeda-extension-development/agents/openai.yaml",
+      "sha256": "2ffb73e32643d6d206e9adabbe5c5be3271086ad787b1a3ff28b8f4f4707a986"
+    },
+    {
+      "path": "skills/easyeda-extension-development/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-extension-development/references/official-adaptation.md",
+      "sha256": "e893f8741e12376df63a11f447ecc9376c7408fec1a809ab65065d726a98538e"
+    },
+    {
+      "path": "skills/easyeda-extension-development/references/operations.md",
+      "sha256": "f961e6b8fcd1b420ad54f2a82aa9384a51b3dbc0bf0a6a1d22eb28d0ae1b184a"
+    },
+    {
+      "path": "skills/easyeda-extension-use/SKILL.md",
+      "sha256": "5c9652f015cfbf6fb0bf7948a06ee438b25d68a7eae64dda0c8c282d3c8b1c27"
+    },
+    {
+      "path": "skills/easyeda-extension-use/agents/openai.yaml",
+      "sha256": "46b02bdcab04ec84f9f8253ba2f7e66d839cf6dcbb3ebde44089248a871f0af8"
+    },
+    {
+      "path": "skills/easyeda-extension-use/references/eext-integration.md",
+      "sha256": "4e9711bc5e738e5eaf49d639240377dbd7269088bc0306399cfdbee6c0dff871"
+    },
+    {
+      "path": "skills/easyeda-extension-use/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-extension-use/references/operations.md",
+      "sha256": "ae74aebb0730407b531d168dcee304df19794af6454240e72b3eec387ad32cf3"
+    },
+    {
+      "path": "skills/easyeda-format-skill/SKILL.md",
+      "sha256": "325cc1db788c4596e7eb1686a257541f962d7549c6faecef93c9d7e957a7d2da"
+    },
+    {
+      "path": "skills/easyeda-format-skill/agents/openai.yaml",
+      "sha256": "848af5b32d2523898807830d30a162521522a79d55dd0f5e7b00d3ab681b3bf7"
+    },
+    {
+      "path": "skills/easyeda-format-skill/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-format-skill/references/official-adaptation.md",
+      "sha256": "7d2fcd176d60e2a4a0c240cf9e25fe35aee9040c2f1800f2c44538251ecd8792"
+    },
+    {
+      "path": "skills/easyeda-format-skill/references/operations.md",
+      "sha256": "5187eae6fffe9a37fe601735ae490897be969c1131998611ea41c5ba0d4a22ed"
+    },
+    {
+      "path": "skills/easyeda-freerouting/SKILL.md",
+      "sha256": "015be3bcb1cf81da051f074eff188ca6394b9d458952dd4a5c94e2c8df03d7f7"
+    },
+    {
+      "path": "skills/easyeda-freerouting/agents/openai.yaml",
+      "sha256": "ebfe33db51c34b41ce5926b48b5e549201d77d7438084b753285efa1c8395777"
+    },
+    {
+      "path": "skills/easyeda-freerouting/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-freerouting/references/operations.md",
+      "sha256": "dc76c4415e34b322c6d4a092fe47172c41a42bfff7ee4ed2dccb7ccad268b713"
+    },
+    {
+      "path": "skills/easyeda-kirouting/SKILL.md",
+      "sha256": "701f98d9a93ff073f99225cc4a5d115b1ea63ab0f2820323885758c651bb243b"
+    },
+    {
+      "path": "skills/easyeda-kirouting/agents/openai.yaml",
+      "sha256": "8ae322c85db031f40024de7b06a7c2cf57abfc4bc5c0416cc8b6e76a1b23d887"
+    },
+    {
+      "path": "skills/easyeda-kirouting/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-kirouting/references/operations.md",
+      "sha256": "a3f634f2a704f9df5632666b2eb69c234e601f486f1c2db969a9d3502bdcdde9"
+    },
+    {
+      "path": "skills/easyeda-knowledge-base/SKILL.md",
+      "sha256": "bd1ea605f8bb81634e40d47fa316713b7c1dce554412ae7376382faf6ee798b5"
+    },
+    {
+      "path": "skills/easyeda-knowledge-base/agents/openai.yaml",
+      "sha256": "7c78d053d2cac5659598f5a9764d528dd2b764e3e8eef16d15ee9eb78303f00c"
+    },
+    {
+      "path": "skills/easyeda-knowledge-base/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-knowledge-base/references/operations.md",
+      "sha256": "d6caa4e360911331567313ff3d3371479bcad858ffdc36933e561729a7d5c2f8"
+    },
+    {
+      "path": "skills/easyeda-manufacturing-export/SKILL.md",
+      "sha256": "3da87369a4c8f25ae680a38a7123738a305f8f5958efdcc1b209d4c26bfac5df"
+    },
+    {
+      "path": "skills/easyeda-manufacturing-export/agents/openai.yaml",
+      "sha256": "2450a9a6e56614e2d9d05c2964a755aec1273e81fe2d033fce2bb76c27bdb84b"
+    },
+    {
+      "path": "skills/easyeda-manufacturing-export/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-manufacturing-export/references/operations.md",
+      "sha256": "f98702bae02121fdd8bc04e0cf555735e0bd875b76da3f527678f1fd2e0c9e7b"
+    },
+    {
+      "path": "skills/easyeda-mcp-setup/SKILL.md",
+      "sha256": "8a2065338ee3cb5b206266c5b5a93d63ca2ed51cdce8e0c82db4b98a1341d375"
+    },
+    {
+      "path": "skills/easyeda-mcp-setup/agents/openai.yaml",
+      "sha256": "bcdc7f036ae080c52e9884d92a0ed479c4a8719f0e14d785b92642a77b98b23d"
+    },
+    {
+      "path": "skills/easyeda-mcp-setup/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-mcp-setup/references/operations.md",
+      "sha256": "315b69e49793868126c5810811a41fc694ede6e7b859d55292c21e09680120da"
+    },
+    {
+      "path": "skills/easyeda-mcp-setup/scripts/native_mcp.py",
+      "sha256": "7ed4fcd3362089f6fbb4265307d0df829ba80bca46f4d4c5209a3e675cf1e692"
+    },
+    {
+      "path": "skills/easyeda-module-reuse/SKILL.md",
+      "sha256": "d1d643b84809203da9d9947d3e59d1e7c81a12e36bf5fd81ce39b6832fff0299"
+    },
+    {
+      "path": "skills/easyeda-module-reuse/agents/openai.yaml",
+      "sha256": "254f05134d4f07ad6d9b5d06e85a19b439fc4c19f69a0fffe6005f402c6bd2b6"
+    },
+    {
+      "path": "skills/easyeda-module-reuse/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-module-reuse/references/operations.md",
+      "sha256": "9ef0a0deb738565a4fd6c2da7aa6429edeef2533fa4c2cdeec6323562fe69e17"
+    },
+    {
+      "path": "skills/easyeda-netlist-import/SKILL.md",
+      "sha256": "94184de9942b3ce18af9e2d11fbdd5413a752fdf77b1fb6cfde5c1526193cadb"
+    },
+    {
+      "path": "skills/easyeda-netlist-import/agents/openai.yaml",
+      "sha256": "f73bdf1d171b34e3d0cf857f8408df02937cdc765f72345c7f6fc06cb187f551"
+    },
+    {
+      "path": "skills/easyeda-netlist-import/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-netlist-import/references/operations.md",
+      "sha256": "0f66aba430488795afba47eb6ebdfeed66b9dcd2562f78379b888ea02526fcb2"
+    },
+    {
+      "path": "skills/easyeda-netlist-review/SKILL.md",
+      "sha256": "dfe757bcc183ee2ae7bbaea201a43578c60eff56858ca1ddeb5990cdf25ec2e2"
+    },
+    {
+      "path": "skills/easyeda-netlist-review/agents/openai.yaml",
+      "sha256": "867dc485040b3a1e003df8a6b02d5fed101f59c8149b3e681b4fd362d62a9ca5"
+    },
+    {
+      "path": "skills/easyeda-netlist-review/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-netlist-review/references/operations.md",
+      "sha256": "e59344ebbef30696a3cfc9abce8a61ab610764a1b04cccd4d46790b904a0cbac"
+    },
+    {
+      "path": "skills/easyeda-pcb-layout/SKILL.md",
+      "sha256": "a6e28dc46623b00f2af9a63f35c8f455bac35e846a505afc914004f7c0ee26a3"
+    },
+    {
+      "path": "skills/easyeda-pcb-layout/agents/openai.yaml",
+      "sha256": "482615da068b6bc5cefb09f98853253920fc8c3d6fcedc84f0220d90bbe71d81"
+    },
+    {
+      "path": "skills/easyeda-pcb-layout/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-pcb-layout/references/operations.md",
+      "sha256": "242bcfa488dd9d5f463eed18041f5d682e501c34fc5e147f35d4a29aee883479"
+    },
+    {
+      "path": "skills/easyeda-pcb-routing/SKILL.md",
+      "sha256": "d2b2d92c172bca84290f21ec3e098478c1d2510377e0f845c63cbc9ac6ddd30b"
+    },
+    {
+      "path": "skills/easyeda-pcb-routing/agents/openai.yaml",
+      "sha256": "a82098eb404164ee93621b8c52b51eb950ada7baa2ab97d5f6fa8fb7bf2b1727"
+    },
+    {
+      "path": "skills/easyeda-pcb-routing/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-pcb-routing/references/operations.md",
+      "sha256": "9d90a8bc43c10f4a0b7eaaee04bae273d0e68ca93701b5c59b582aa454c2c877"
+    },
+    {
+      "path": "skills/easyeda-power-integrity/SKILL.md",
+      "sha256": "de8a8dd01e7378ca240debd5f8a222fefc2fe113cd6d43b8036e267868da65d3"
+    },
+    {
+      "path": "skills/easyeda-power-integrity/agents/openai.yaml",
+      "sha256": "014360a156173c1a077a448ae02641b35205d4dc7ca2d39930dfa85f06998487"
+    },
+    {
+      "path": "skills/easyeda-power-integrity/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-power-integrity/references/operations.md",
+      "sha256": "3cf49c469b811200e300653463435b42b07f8d5a3ec883c459161f1758ce159b"
+    },
+    {
+      "path": "skills/easyeda-project-backup/SKILL.md",
+      "sha256": "c847931757a91ad747794a673731622f359db6f582ba0f4bf0f674797a862bd0"
+    },
+    {
+      "path": "skills/easyeda-project-backup/agents/openai.yaml",
+      "sha256": "29eea881245fe783a4e939930bf8a3b16168f5eea7e4874e7d2e569b8b182675"
+    },
+    {
+      "path": "skills/easyeda-project-backup/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-project-backup/references/operations.md",
+      "sha256": "7d558091017d09184f22a71b5cf370e93a714d3ac2e6a7435a5a2d8f03d2ce0a"
+    },
+    {
+      "path": "skills/easyeda-project-migration/SKILL.md",
+      "sha256": "bac997cce64fe9ff27abb663544cc7eb48f41cd063acfa1ef4915f3c3fed5ee0"
+    },
+    {
+      "path": "skills/easyeda-project-migration/agents/openai.yaml",
+      "sha256": "74c2fbc5a5464c9416d3922adfcd4950038c00ae8c77c17e8253be4f88a50401"
+    },
+    {
+      "path": "skills/easyeda-project-migration/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-project-migration/references/operations.md",
+      "sha256": "bff2a830c3d1890c58f95feaab50743ab4d13304de01eb870ad6fdb985692fed"
+    },
+    {
+      "path": "skills/easyeda-schematic-design/SKILL.md",
+      "sha256": "e289876c17f7f09dd0adf0ee9b14511fd2e85b81a3448022acaef0189150a204"
+    },
+    {
+      "path": "skills/easyeda-schematic-design/agents/openai.yaml",
+      "sha256": "7cfa11ac286c365da7351ba342a07755abf42533d4e37713883a9a7f990e1078"
+    },
+    {
+      "path": "skills/easyeda-schematic-design/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-schematic-design/references/operations.md",
+      "sha256": "0ccf34f121063fb2eedce23fa6b52b7dd35f482a0689a87b88a773f32b01fb87"
+    },
+    {
+      "path": "skills/easyeda-schematic-net-fanout/SKILL.md",
+      "sha256": "ca614073918e7ffc4e37f3300f948ac205af809f7150c638bbb2ad812a8a042c"
+    },
+    {
+      "path": "skills/easyeda-schematic-net-fanout/agents/openai.yaml",
+      "sha256": "37654a97057a0c093145c6d402f62f6f67a9eaa4e080188fb0a7c0c7f9fd0e12"
+    },
+    {
+      "path": "skills/easyeda-schematic-net-fanout/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-schematic-net-fanout/references/official-adaptation.md",
+      "sha256": "002fc19c26db0d8091bb7372a2bfc93499b697adcc004b1ff819653400e59e06"
+    },
+    {
+      "path": "skills/easyeda-schematic-net-fanout/references/operations.md",
+      "sha256": "c947331be95f2d1de3ff3ac69d23e948b2462ab125dfff2a288b0536260373a3"
+    },
+    {
+      "path": "skills/easyeda-silkscreen-art/SKILL.md",
+      "sha256": "df2baba989ec5f2d2760310b67bdef555bc16d6d66305b9d3c7b1dafc33e0121"
+    },
+    {
+      "path": "skills/easyeda-silkscreen-art/agents/openai.yaml",
+      "sha256": "59cb302145e7793b9414e105bbd7a73732f7604db117964fe30ec8c4d57ba8bc"
+    },
+    {
+      "path": "skills/easyeda-silkscreen-art/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-silkscreen-art/references/operations.md",
+      "sha256": "11937c15d5b6c32fb4631f345e9e5d38c2377bb468cd5de4281b4398a47552f0"
+    },
+    {
+      "path": "skills/easyeda-simulation/SKILL.md",
+      "sha256": "7566d97e1cb4c969a7f822e8fcc343317dd8b2095879221cf7d647b179e64da5"
+    },
+    {
+      "path": "skills/easyeda-simulation/agents/openai.yaml",
+      "sha256": "26043e342d1da1767df87620ca97ff2413a05d095abd53518f94e31f89828475"
+    },
+    {
+      "path": "skills/easyeda-simulation/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-simulation/references/operations.md",
+      "sha256": "bb1458fabcd3bd3a6ab4409124decfe3fae70fcb796d33fcefad702bc8ed9e5f"
+    },
+    {
+      "path": "skills/easyeda-special-pcb/SKILL.md",
+      "sha256": "3b30530640a756d91d7a9cca082c301265c495ae4070dc3338e98a32723cfa33"
+    },
+    {
+      "path": "skills/easyeda-special-pcb/agents/openai.yaml",
+      "sha256": "0959e37d1f023ad7c4398c3e1e57355e7224ca42ea84bd085f3df95373a1d340"
+    },
+    {
+      "path": "skills/easyeda-special-pcb/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-special-pcb/references/operations.md",
+      "sha256": "8ddae1af1a964ce4ab1da217e3dfbc7b9d93be1798d4f2b68f8bc44c70cf381d"
+    },
+    {
+      "path": "skills/easyeda-timing-analysis/SKILL.md",
+      "sha256": "5462b836adc7ce1a0238bab43f8d42b93338cc6650b75403b33dfeeca38dfe54"
+    },
+    {
+      "path": "skills/easyeda-timing-analysis/agents/openai.yaml",
+      "sha256": "166d1061b543796db86325e4551b79b4ee41654ec64c1dab174e28fb5509fc80"
+    },
+    {
+      "path": "skills/easyeda-timing-analysis/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-timing-analysis/references/operations.md",
+      "sha256": "9defe82d132e960230399c2614c0c64f6c15487958edf5f6eb04c65bf1dac4de"
+    },
+    {
+      "path": "skills/easyeda-use/SKILL.md",
+      "sha256": "ecbe86bc3e77be730e997698f594eac81b124e7d7ce1d096bf3eddf7871ec2c0"
+    },
+    {
+      "path": "skills/easyeda-use/agents/openai.yaml",
+      "sha256": "cc2febc6bb99b8bc2736acb6046b637c052c63570f71b2ee5c16f118355d4425"
+    },
+    {
+      "path": "skills/easyeda-use/references/native-mcp.md",
+      "sha256": "6cd7d8b2d93ca391b35caa3b1721bb8702d2195b5406a86de9c7ee7db5c3bb84"
+    },
+    {
+      "path": "skills/easyeda-use/references/operations.md",
+      "sha256": "ffd12eb362b09a701d176b31989f6fbb94b878c3a3b05e02e6bc92dab4a9a241"
+    },
+    {
+      "path": "source-lock.json",
+      "sha256": "5695b388cfe64a8507d395e560ca7d6380d63f3ce193d5c37366718b9a363197"
+    }
+  ]
+}

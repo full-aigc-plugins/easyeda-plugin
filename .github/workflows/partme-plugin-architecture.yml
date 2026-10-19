@@ -1,0 +1,5 @@
+name: Partme Plugin Architecture
+on: [push, pull_request]
+jobs:
+  architecture:
+    uses: full-aigc-plugins/.github/.github/workflows/partme-plugin-architecture.yml@main

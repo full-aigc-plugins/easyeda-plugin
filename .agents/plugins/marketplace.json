@@ -1,0 +1,26 @@
+{
+  "name": "full-aigc-plugins-easyeda",
+  "interface": {
+    "displayName": "EasyEDA"
+  },
+  "plugins": [
+    {
+      "name": "easyeda",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity",
+      "version": "0.1.0-dev.20261019.4",
+      "description": "嘉立创 EDA / EasyEDA 专业版技能与原生 MCP 接入；本地开发候选。",
+      "interface": {
+        "displayName": "EasyEDA",
+        "shortDescription": "通过嘉立创 EDA 内置 MCP 设计原理图、PCB 并导出制造文件"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "easyeda",
+  "version": "0.1.0-dev.20261019.4",
+  "description": "嘉立创 EDA / EasyEDA 专业版技能与原生 MCP 接入；本地开发候选。",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Full AIGC Plugins"
+  },
+  "keywords": [
+    "easyeda",
+    "pcb",
+    "schematic",
+    "manufacturing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "EasyEDA",
+        "shortDescription": "通过嘉立创 EDA 内置 MCP 设计原理图、PCB 并导出制造文件",
+        "logo": "./assets/official-logo.png",
+        "logoDark": "./assets/official-logo.png",
+        "composerIcon": "./assets/official-logo.png",
+        "composerIconDark": "./assets/official-logo.png"
+      },
+      "onboardingSkill": "./skills/easyeda-use/SKILL.md"
+    }
+  }
+}

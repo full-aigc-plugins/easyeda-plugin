@@ -1,0 +1,17 @@
+{
+  "name": "EasyEDA MCP",
+  "version": "0.1.0-dev.20261019.3",
+  "uuid": "b0f54bac131848dab885c8215a0ac81c",
+  "path": "extensions/easyeda-mcp_v0.1.0-dev.20261019.3.eext",
+  "sha256": "7a072089efe65f12c424e2ea7b97ade16922416a8b6677728585c43f38a27960",
+  "transport": "official native MCP; external.easyedaMcp",
+  "defaultWriteEnabled": false,
+  "installation": "manual EDA extension manager; explicit user authorization",
+  "localClientValidation": {
+    "client": "JLCEDA Pro 4.1.71",
+    "interfaces": 14,
+    "schematicObjects": 58,
+    "pcbComponents": 33,
+    "engineeringWritesExecuted": false
+  }
+}
